@@ -74,7 +74,6 @@ const generateTeam = () => {
         .then((answer2) => {
           if (answer.role === "Manager") {
             const manager = new Manager(answer.name, answer.id, answer.email, answer2.officeNumber);
-            console.log(manager.getOfficeNumber());
             team.push(manager);
           }
 
